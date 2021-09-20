@@ -1,0 +1,60 @@
+/* GENERAL STYLE */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+/* UTILITY */
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.clearfix::after {
+	content: "" ;
+	display: table;
+	clear: both;	
+}
+.mb-40 {
+	margin-bottom: 40px;
+}
+.px-10 {
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.debug-box {
+	height: 70px;
+	background-color: royalblue;
+}
+/* HEADER */
+header{
+	background-color: violet;
+	height: 70px;/*Canc */
+}
+/* MAIN */
+.pict {
+	background-color: goldenrod;
+	height: 500px;/*Canc */
+}
+.columns-section {
+	background-color: dodgerblue;
+}
+.columns-head {
+	margin-bottom: 20px;
+}
+.columns .column {
+	float: left ;
+	width: 20%;
+}
+
+.columns .column:nth-child(2) {
+	width: 60%;
+}
+.column-title {
+	margin-bottom: 20px;
+}
+
+footer {
+	background-color: purple ;
+	height: 70px;
+}
