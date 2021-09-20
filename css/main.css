@@ -3,6 +3,7 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+	font-family: 'Montserrat', sans-serif;
 }
 /* UTILITY */
 .container {
@@ -26,16 +27,71 @@
 	height: 70px;
 	background-color: royalblue;
 }
+
 /* HEADER */
 header{
-	background-color: violet;
-	height: 70px;/*Canc */
 }
+.logo-header {
+	width: 170px;
+}
+.nav-item li {
+	display: inline-block ;
+	margin-right: 15px;
+	
+}
+.nav-item :last-child {
+	margin-right: 0px;
+	
+}
+.nav-item li a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #858585;
+}
+.nav-item li a :last-child{
+	margin-right: 0px;
+}
+
+
+
+
 /* MAIN */
 .pict {
-	background-color: goldenrod;
-	height: 500px;/*Canc */
+	
+	min-height: 500px;
+	background-image: url("../img/banner.jpg");
+	background-size: 100%;
+	background-repeat: no-repeat;
+	background-position-y: center;
+	border-radius: 20px;
+	
 }
+.photo-sect{
+	position: relative;
+}
+.pict::before {
+	content: '';
+	background: rgba(0, 0, 0, 0.20);
+	display: block;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+	border-radius: 20px;
+	
+	
+}
+
+.pict-text {
+	max-width: 580px;
+	color: #fff;
+	position: absolute;
+	bottom: 70px;
+	left: 50px;
+}
+.pict-text h1 {
+	font-weight: 500;
+}
+
 .columns-section {
 	background-color: dodgerblue;
 }
